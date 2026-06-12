@@ -6,146 +6,128 @@
   <title>Alfin Shajan — Resume</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
+      background: #EEEDFE;
+      padding: 20px;
+    }
+    .resume {
       font-family: 'Times New Roman', Times, serif;
       background: #fff;
-      color: #000;
-      padding: 60px 70px;
-      max-width: 850px;
+      color: #1a1a2e;
+      padding: 48px 60px;
+      max-width: 820px;
       margin: 0 auto;
       font-size: 12pt;
-      line-height: 1.4;
+      line-height: 1.45;
     }
-
-    /* NAME */
     .name {
       text-align: center;
       font-size: 22pt;
       font-weight: bold;
       letter-spacing: 2px;
       text-transform: uppercase;
+      color: #3C3489;
     }
-
     .contact-line {
       text-align: center;
       font-size: 10pt;
       margin-top: 4px;
+      color: #534AB7;
     }
-
-    /* DIVIDER */
-    hr {
-      border: none;
-      border-top: 1.5px solid #000;
-      margin: 10px 0;
-    }
-
     hr.thin {
-      border-top: 0.5px solid #000;
+      border: none;
+      border-top: 1px solid #AFA9EC;
+      margin-top: 4px;
+      margin-bottom: 6px;
     }
-
-    /* SECTION HEADING */
     .section-heading {
       font-size: 11pt;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.2px;
       margin-top: 14px;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
+      color: #3C3489;
     }
-
-    /* CONTENT */
     p {
       font-size: 11pt;
       margin-bottom: 4px;
+      color: #1a1a2e;
     }
-
-    /* EDU / PROJECT rows */
     .row {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       margin-bottom: 2px;
     }
-
-    .row .left { font-weight: bold; font-size: 11pt; }
-    .row .right { font-size: 10pt; white-space: nowrap; }
-
+    .row .left { font-weight: bold; font-size: 11pt; color: #26215C; }
+    .row .right { font-size: 10pt; white-space: nowrap; color: #534AB7; }
     .sub-line {
       font-size: 10.5pt;
       font-style: italic;
       margin-bottom: 6px;
+      color: #7F77DD;
     }
-
-    /* SKILLS TABLE */
     .skills-list {
       columns: 2;
       column-gap: 30px;
       font-size: 11pt;
       margin-top: 4px;
+      color: #1a1a2e;
     }
-
-    .skills-list li {
-      list-style: disc;
-      margin-left: 18px;
-      margin-bottom: 2px;
-    }
-
-    /* BULLET LIST */
+    .skills-list li { list-style: disc; margin-left: 18px; margin-bottom: 2px; }
+    .skills-list li::marker { color: #7F77DD; }
     ul.bullets {
       font-size: 11pt;
       margin-left: 20px;
       margin-top: 4px;
+      color: #1a1a2e;
     }
-
-    ul.bullets li {
-      list-style: disc;
-      margin-bottom: 3px;
+    ul.bullets li { list-style: disc; margin-bottom: 3px; }
+    ul.bullets li::marker { color: #7F77DD; }
+    .signature-row {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 11pt;
+      color: #1a1a2e;
     }
-
     @media print {
-      body { padding: 40px 50px; }
+      body { background: #EEEDFE; padding: 0; }
+      .resume { padding: 40px 50px; }
     }
   </style>
 </head>
 <body>
 
+<div class="resume">
+
   <div class="name">Alfin Shajan</div>
   <div class="contact-line">
     +91 9497061630 &nbsp;|&nbsp; shajanalfin1@gmail.com &nbsp;|&nbsp; Parapukkara, Kerala
   </div>
-
-  <hr/>
-
-  <!-- OBJECTIVE -->
   <div class="section-heading">Objective</div>
   <hr class="thin"/>
-  <p style="margin-top:5px;">
+  <p>
     First-year B.Tech student in Electronics and Instrumentation Engineering at FISAT, Mookkannur (KTU 2024 scheme), seeking to gain practical experience in robotics, embedded systems, and control engineering through technical projects and team collaboration. Committed to continuous learning and contributing to emerging technology solutions.
   </p>
 
-  <!-- EDUCATION -->
   <div class="section-heading">Education</div>
   <hr class="thin"/>
-
-  <div style="margin-top:5px;">
-    <div class="row">
-      <span class="left">Federal Institute of Science and Technology (FISAT)</span>
-      <span class="right">2025 – 2029</span>
-    </div>
-    <div class="sub-line">B.Tech, Electronics and Instrumentation Engineering &nbsp;·&nbsp; KTU 2024 Scheme &nbsp;·&nbsp; Mookkannur, Kerala</div>
-
-    <div class="row">
-      <span class="left">Higher Secondary Education</span>
-      <span class="right">2023 – 2025</span>
-    </div>
-    <div class="sub-line">Computer Science Stream</div>
+  <div class="row">
+    <span class="left">Federal Institute of Science and Technology (FISAT)</span>
+    <span class="right">2025 – 2029</span>
   </div>
+  <div class="sub-line">B.Tech, Electronics and Instrumentation Engineering &nbsp;·&nbsp; KTU 2024 Scheme &nbsp;·&nbsp; Mookkannur, Kerala</div>
+  <div class="row">
+    <span class="left">Higher Secondary Education</span>
+    <span class="right">2023 – 2025</span>
+  </div>
+  <div class="sub-line">Computer Science Stream</div>
 
-  <!-- TECHNICAL SKILLS -->
   <div class="section-heading">Technical Skills</div>
   <hr class="thin"/>
-  <ul class="skills-list" style="margin-top:5px;">
+  <ul class="skills-list">
     <li>C Programming (Basic)</li>
     <li>Python (Basic)</li>
     <li>Arduino Programming (Basic)</li>
@@ -154,46 +136,40 @@
     <li>HTML / Web Basics</li>
   </ul>
 
-  <!-- PROJECTS -->
   <div class="section-heading">Projects</div>
   <hr class="thin"/>
-
-  <div style="margin-top:5px;">
-    <div class="row">
-      <span class="left">Proximity Sensor System — HC-SR04 & Arduino</span>
-      <span class="right">FISAT Rover Team</span>
-    </div>
-    <div class="sub-line">Arduino, HC-SR04 Ultrasonic Sensor, LED Indicators, Tinkercad Simulation</div>
-    <ul class="bullets">
-      <li>Designed and simulated a proximity detection circuit using an HC-SR04 ultrasonic sensor interfaced with an Arduino Uno.</li>
-      <li>Implemented LED-based distance indicators with configurable thresholds for obstacle detection.</li>
-      <li>Validated the full circuit in Tinkercad before physical build; developed as part of the college Rover Team's obstacle-avoidance research.</li>
-    </ul>
+  <div class="row">
+    <span class="left">Proximity Sensor System — HC-SR04 & Arduino</span>
+    <span class="right">FISAT Rover Team</span>
   </div>
+  <div class="sub-line">Arduino, HC-SR04 Ultrasonic Sensor, LED Indicators, Tinkercad Simulation</div>
+  <ul class="bullets">
+    <li>Designed and simulated a proximity detection circuit using an HC-SR04 ultrasonic sensor interfaced with an Arduino Uno.</li>
+    <li>Implemented LED-based distance indicators with configurable thresholds for obstacle detection.</li>
+    <li>Validated the full circuit in Tinkercad before physical build; developed as part of the college Rover Team's obstacle-avoidance research.</li>
+  </ul>
 
-  <!-- EXTRACURRICULAR -->
   <div class="section-heading">Extracurricular Activities</div>
   <hr class="thin"/>
-  <ul class="bullets" style="margin-top:5px;">
+  <ul class="bullets">
     <li>Active member of the FISAT College Rover Team — working on hardware prototyping and embedded systems for rover subsystems.</li>
   </ul>
 
-  <!-- LANGUAGES -->
   <div class="section-heading">Languages Known</div>
   <hr class="thin"/>
-  <p style="margin-top:5px;">English &nbsp;·&nbsp; Malayalam &nbsp;·&nbsp; Hindi</p>
+  <p>English &nbsp;·&nbsp; Malayalam &nbsp;·&nbsp; Hindi</p>
 
-  <!-- DECLARATION -->
   <div class="section-heading">Declaration</div>
   <hr class="thin"/>
-  <p style="margin-top:5px;">
+  <p>
     I hereby declare that all the information provided above is true and correct to the best of my knowledge and belief.
   </p>
 
-  <div style="margin-top:30px; display:flex; justify-content:space-between; font-size:11pt;">
+  <div class="signature-row">
     <span>Place: Parapukkara, Thrissur, Kerala</span>
     <span><strong>Alfin Shajan</strong></span>
   </div>
 
+</div>
 </body>
 </html>
